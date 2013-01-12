@@ -1,0 +1,6 @@
+%thead
+  %tr
+    %th Id
+    %th Poll
+    %th Total Vote
+%tbody
