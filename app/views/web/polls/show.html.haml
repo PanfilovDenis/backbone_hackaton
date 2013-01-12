@@ -1,1 +1,7 @@
 = render 'shared/poll', poll: @poll
+
+:javascript
+  $(function() {
+    window.pollsRouter = new BackboneHackaton.Routers.PollsRouter({poll_items: #{@poll.items.to_json.html_safe}});
+    Backbone.history.start({pushState: true} );
+  });

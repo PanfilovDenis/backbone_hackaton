@@ -1,0 +1,3 @@
+%ul.nav.nav-list.poll
+  -#%li.nav-header= "#{@name} (#{@votes_count})"
+  %li.nav-header= "atata (100500)"

@@ -1,6 +1,7 @@
 BackboneHackaton::Application.routes.draw do
   namespace :api do
     resources :polls, only: [:index, :show]
+    resources :poll_items, only: [:update]
   end
 
   scope module: :web do

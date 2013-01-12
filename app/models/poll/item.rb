@@ -1,5 +1,5 @@
 class Poll::Item < ActiveRecord::Base
-  attr_accessible :name
+  include ActiveModel::ForbiddenAttributesProtection
 
   belongs_to :poll
 
