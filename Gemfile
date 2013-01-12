@@ -41,7 +41,7 @@ gem 'unicorn'
 group :test do
   gem 'minitest'
   gem 'factory_girl_rails', :require => false
-  gem 'turn'
+  gem 'tconsole'
 end
 
 # Deploy with Capistrano

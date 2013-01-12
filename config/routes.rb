@@ -1,4 +1,8 @@
 BackboneHackaton::Application.routes.draw do
+  namespace :api do
+    resources :polls, only: [:index, :show]
+  end
+
   scope module: :web do
     root to: "welcome#index"
     resources :polls, only: [:index, :show] do
