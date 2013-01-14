@@ -5,14 +5,13 @@ class BackboneHackaton.Views.Polls.ShowView extends Backbone.View
 
 
   addItems: =>
-    @collection.each @addItem
+    @model.get('items').each @addItem
 
   addItem: (item) =>
     view = new BackboneHackaton.Views.Polls.ItemView model : item
     @$('ul').append(view.render().el)
 
   render: ->
-    @$el.html(@template( ))
-    #@$el.html(@template(@model.toJSON() ))
+    @$el.html(@template(@model.toJSON() ))
     @addItems()
     return this

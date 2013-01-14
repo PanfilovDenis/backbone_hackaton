@@ -1,3 +1,4 @@
 %a{href: '#'}= @name
 %li.progress
   .bar{style: "width: 50%; "}
+  -#TODO: Make real calculations

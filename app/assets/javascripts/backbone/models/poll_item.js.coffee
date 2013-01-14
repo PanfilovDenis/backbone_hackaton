@@ -1,4 +1,4 @@
-class BackboneHackaton.Models.PollItem extends Backbone.Model
+class BackboneHackaton.Models.PollItem extends Backbone.RelationalModel
   paramRoot: 'poll_item'
 
   defaults:

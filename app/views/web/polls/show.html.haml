@@ -2,6 +2,6 @@
 
 :javascript
   $(function() {
-    window.pollsRouter = new BackboneHackaton.Routers.PollsRouter({poll_items: #{@poll.items.to_json.html_safe}});
+    window.pollsRouter = new BackboneHackaton.Routers.PollsRouter({polls: #{PollPresenter.to_json(@polls).html_safe}});
     Backbone.history.start({pushState: true} );
   });
