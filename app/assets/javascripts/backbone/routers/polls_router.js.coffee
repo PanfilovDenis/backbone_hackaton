@@ -19,5 +19,5 @@ class BackboneHackaton.Routers.PollsRouter extends Backbone.Router
 #    poll = @polls.get(id)
 
 #    @view = new BackboneHackaton.Views.Polls.ShowView(model: poll, items: @poll_items)
-    @view = new BackboneHackaton.Views.Polls.ShowView(items: @poll_items)
-    $("#polls").html(@view.render().el)
+    @view = new BackboneHackaton.Views.Polls.ShowView(collection: @poll_items)
+    $("#poll").html(@view.render().el)
